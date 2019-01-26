@@ -141,7 +141,7 @@ AUTHENTICATION_BACKENDS = [
     'social_core.backends.facebook.FacebookOAuth2',
 ]
 
-ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1', '98751d6a.ngrok.io']
 
 
 SOCIAL_AUTH_FACEBOOK_KEY = 'xxx' # Facebook App ID
