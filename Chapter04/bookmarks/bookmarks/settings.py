@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'social_django',
     'images.apps.ImagesConfig',
+    'sorl.thumbnail',
 ]
 
 MIDDLEWARE = [
@@ -148,3 +149,5 @@ SOCIAL_AUTH_FACEBOOK_KEY = 'xxx' # Facebook App ID
 SOCIAL_AUTH_FACEBOOK_SECRET = 'xxx' # Facebook App Secret
 
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+
+THUMBNAIL_DEBUG = True
