@@ -151,3 +151,12 @@ SOCIAL_AUTH_FACEBOOK_SECRET = 'xxx' # Facebook App Secret
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 
 THUMBNAIL_DEBUG = True
+
+
+
+from django.urls import reverse_lazy
+
+ABSOLUTE_URL_OVERRIDES = {
+    'auth.user': lambda u: reverse_lazy('user_detail',
+                                        args=[u.username])
+}
