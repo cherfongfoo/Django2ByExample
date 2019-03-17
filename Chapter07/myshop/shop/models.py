@@ -28,9 +28,9 @@ class Category(TranslatableModel):
 
 class Product(TranslatableModel):
     translations = TranslatedFields(
-        name = models.CharField(max_length=200, db_index=True),
-        slug = models.SlugField(max_length=200, db_index=True),
-        description = models.TextField(blank=True)
+        name=models.CharField(max_length=200, db_index=True),
+        slug=models.SlugField(max_length=200, db_index=True),
+        description=models.TextField(blank=True)
     )
     category = models.ForeignKey(Category,
                                  related_name='products',

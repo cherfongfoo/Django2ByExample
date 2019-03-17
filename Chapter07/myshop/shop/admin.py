@@ -10,6 +10,7 @@ class CategoryAdmin(TranslatableAdmin):
     def get_prepopulated_fields(self, request, obj=None):
         return {'slug': ('name',)}
 
+
 @admin.register(Product)
 class ProductAdmin(TranslatableAdmin):
     list_display = ['name', 'slug', 'price',
