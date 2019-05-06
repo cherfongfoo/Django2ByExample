@@ -28,6 +28,10 @@ class Course(models.Model):
     overview = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
 
+    students = models.ManyToManyField(User,
+                                      related_name='courses_joined',
+                                      blank=True)
+
     class Meta:
         ordering = ['-created']
 
@@ -108,3 +112,5 @@ class Image(ItemBase):
 
 class Video(ItemBase):
     url = models.URLField()
+
+
